@@ -101,8 +101,8 @@
     margin: auto;
 ">
 								<select class="" data-width="fit" id="language-select">
-									<option value="en">en</option>
-									<option value="ar">ar</option>
+									<option value="en">EN</option>
+									<option value="ar">AR</option>
 								  </select>
 							</li>
 							<div class="separator"></div>
@@ -435,7 +435,7 @@
 							>
 								ABOUT US
 							</p>
-							<h2 class="translate"
+							<h2 class="translate" data-translation-key="welcome_message"
 								style="
 									color: #000;
 									font-size: 37px;
@@ -1730,17 +1730,6 @@ languageSelect.addEventListener("change", function () {
 // Initial content update based on the default selected language (e.g., 'en' for English)
 const defaultLanguage = languageSelect.value;
 updateContent(defaultLanguage);
-
-const selectedLanguage = 'ar';
-const url = `json/${selectedLanguage}.json`; // Assuming 'json' is the directory where ar.json is located
-fetch(url)
-  .then(response => response.json())
-  .then(translation => {
-    // Update content with translation
-  })
-  .catch(error => {
-    console.error(`Error loading language file: ${error}`);
-  });
   </script>
 	</body>
 </html>
