@@ -178,20 +178,3 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
-const selectedLanguage = 'ar';
-const url = `${selectedLanguage}.json`;
-console.log('Fetching:', url); 
-fetch(url)
-  .then(response => response.json())
-  .then(translation => {
-    Object.keys(translation).forEach(key => {
-      const element = document.getElementById(key);
-      if (element) {
-        element.textContent = translation[key];
-      }
-    });
-  })
-  .catch(error => {
-    console.error(`Error loading language file: ${error}`);
-  });

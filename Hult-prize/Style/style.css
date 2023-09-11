@@ -1794,7 +1794,7 @@ strong {
 
 @media (min-width: 1400px) {
     .container {
-        max-width: 1520px !important;
+        max-width: 1700px !important;
     }
 }
 
@@ -2461,4 +2461,8 @@ a {
         margin-left: 15px !important;
         margin-top: unset !important;
     }
+}
+
+.headertittle-2 {
+    width: 100%;
 }
